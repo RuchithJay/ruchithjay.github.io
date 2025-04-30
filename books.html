@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuchithJay |  Books</title>
+    <link rel="icon" href="assets/title.svg" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar (same as index.html) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">RuchithJay</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="gallery.html">Art Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Books Section -->
+    <section class="books">
+        <div class="container">
+            <h1>My Fiction Gallery</h1>
+            <p class="gallery-description" style="background-color: hsl(192, 100%, 97%); padding: 10px; border-radius: 5px;">
+                <b>Note:</b> You might have noted that the autors of the last two books are different. 
+                "The Elf of Western Academy" was my first web novel and back in the day I used that pseudo nym <i>Ruki Tarin.</i>  Same goee's to "The Story of an Elf",
+                where I have used <i>ShinkuMajo</i> as my pen name(nowadays that name is only used with colour projects).
+            </p>
+            <div class="books-grid">
+                <!-- Book 1 -->
+                <div class="book-card">
+                    <img src="images/EOL.png" alt="Book Cover 1">
+                    <div class="book-info">
+                        <h3>Eyes of Lucigarden</h3>
+                        <p style="color: green;">🟢 Ongoing </p>
+                        <p class="meta">Genre: Fanyasy, Romance, Action</p>
+                        <p>The story of Nastya filled with magic, misteries, action and adventure.</p>
+                        <a href="https://www.royalroad.com/fiction/94385/eyes-of-lucigarden" class="btn" target="_blank" rel="noopener noreferrer">Read on RoyalRoad</a>
+                    </div>
+                </div>
+                
+                <!-- Book 2 -->
+                <div class="book-card">
+                    <img src="images/ADGHM.png" alt="Book Cover 2">
+                    <div class="book-info">
+                        <h3>A Good Day to Hunt Monsters</h3>
+                        <p style="color: green;">🟢 Ongoing </p>
+                        <p class="meta">Genre: Post-apocalyptic, Mecha, Action</p>
+                        <p>The story of Tharusha, setplace in a post apacolyptic future.</p>
+                        <a href="https://tapas.io/series/AGDHM/info" class="btn" target="_blank" rel="noopener noreferrer">Read on Tapas</a>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/HED.png" alt="Book Cover 2">
+                    <div class="book-info">
+                        <h3>Hitomi's Extraordinary Days</h3>
+                        <p style="color: orange;">🟡 On Haitus  (This novel is being re-written) </p>
+                        <p class="meta">Genre: Action, Fantasy, Magic, Highschool</p>
+                        <p>This is the story of a girl named Hitomi, and her extraordinary high-school days.</p>
+                        <a href="https://www.royalroad.com/fiction/58543/hitomis-extraordinary-days" class="btn" target="_blank" rel="noopener noreferrer">Read on RoyalRoad</a>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-card">
+                    <img src="images/TSAE.png" alt="Book Cover 2">
+                    <div class="book-info">
+                        <h3>The Story of an Elf</h3>
+                        <p style="color: rgb(183, 0, 255);">☑️ Completed</p>
+                        <p class="meta">Genre: Fantasy, Isekai, Romance</p>
+                        <p>The story of a girl who transmigrated into her own novel. <i>Please do excuse the ai art !!</i></p>
+                        <a href="https://tapas.io/series/TSOAE/info" class="btn" target="_blank" rel="noopener noreferrer">Read on Tapas</a>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-card">
+                    <img src="images/TEWA.png" alt="Book Cover 2">
+                    <div class="book-info">
+                        <h3>Elf of Western Academy</h3>
+                        <p style="color: red;">🔴 Cancelled</p>
+                        <p class="meta">Genre: Fantasy, Action, Highschool</p>
+                        <p>The story of Anna and her days at western academy.</p>
+                        <a href="https://www.webnovel.com/book/the-elf-of-western-academy_23306781305797205" class="btn" target="_blank" rel="noopener noreferrer">Read on WebNovel</a>
+                    </div>
+                </div>
+
+                
+                
+                <!-- Add more books -->
+            </div>
+        </div>
+    </section>
+
+    <div class="background-credit">
+        <a href="https://www.pixiv.net/en/artworks/122575115" target="_blank" rel="noopener noreferrer">Background: Shinku</a>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <div class="container">
+            <a href="https://ruchithjay.github.io/linktree.github.io/" target="_blank" class="linktree-button">Visit My Linktree</a>
+            <br>
+            <br>
+            <p>&copy; <span id="year"></span> RuchithJay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

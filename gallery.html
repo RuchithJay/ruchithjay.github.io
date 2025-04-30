@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuchithJay | Art Gallery</title>
+    <link rel="icon" href="assets/title.svg" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar (same as index.html) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">RuchithJay</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="gallery.html">Art Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h1>Manga/Comic Panel Coloring</h1>
+            <p class="gallery-description" style="background-color: hsl(192, 100%, 97%); padding: 10px; border-radius: 5px;">
+                This is one of my favourite lessuretime activities, which I find very enjoyable and relaxing to enguage in.
+                You can view some of my best works here. Done under the name 
+                <a href="https://www.pixiv.net/en/users/96597951" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 152, 170);">Shinku Majo.</a><br>
+                <b>Note:</b> I do not own the original art, all the credit goes to the original artists. I only do fan colorings.
+                <br>
+            </p>
+            <div class="gallery-grid">
+                <!-- Art Piece 1 -->
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art1.png" alt="Art Piece 1">
+                    <div class="art-info">
+                        <h3>Cuddly shopping</h3>
+                        <p>Part of the skip and loafer manga colour project done by me @ShinkuMajo 
+                            on pixiv and originally drawn by Misaki Takematsu</p>
+                        <p><a href="https://www.pixiv.net/en/artworks/123983477" target="_blank" rel="noopener noreferrer"> View full image on Pixiv >></a></p>
+
+                    </div>
+                    
+                </div>
+                
+                <!-- Art Piece 2 -->
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art2.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Akane-banashi - Color Project</h3>
+                        <p>Colored the cover page of chapter 126, of the weekly jump manga
+                            Akane-banashi, originally drawn by Yuki Suenaga</p>
+                        </p>
+                        <p><a href="https://www.pixiv.net/en/artworks/122575115" target="_blank" rel="noopener noreferrer"> View full image on Pixiv >></a></p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art3.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Emma - Color Project</h3>
+                        <p>Emma, a beautiful story by Kaoru Mori. If you're interested in drama with a Victorian setting, this is a must-read.</p>
+                        <p><a href="https://www.pixiv.net/en/artworks/122544375" target="_blank" rel="noopener noreferrer"> View full image on Pixiv >></a></p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art8.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Witch Hat Atelier - Color Project</h3>
+                        <p>This is from the manga Witch Hat Atelier. (I have not yet uploaded it on pixiv)</p>
+                        <p><a href="#"> View full image on Pixiv >></a></p>
+                    </div>
+                    
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art6.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Kusuriya - Color Project (1)</h3>
+                        <p>Chapter 8: Garden Party - Part 3 (panel 16), fan color project.
+                            Originally drawn by @nekokurage, fan colored by me (Shinku) here.
+                        </p>
+                        <p><a href="https://www.pixiv.net/en/artworks/117135600" target="_blank" rel="noopener noreferrer"> View full image on Pixiv >></a></p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art5.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Kusuriya - Color Project (2)</h3>
+                        <p>Chapter 20: The Eunuch and the Courtesan (cover page), color panel.
+                            Originally drawn by @nekokurage, fan colored by me (Shinku) here.</p>
+                        <p><a href="https://www.pixiv.net/en/artworks/113946179" target="_blank" rel="noopener noreferrer"> View full image on Pixiv >></a></p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art4.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Kusuriya - Color Project (2)</h3>
+                        <p>Apothecary Diaries fan color project, chapter 47 (Moon Fairy - Part 1) 
+                            cover page originally drawn by @nekokurage, fan colored by me (Shinku) here.</p>
+                        <p><a href="https://www.pixiv.net/en/artworks/126806288" target="_blank" rel="noopener noreferrer"> View full image on Pixiv >></a></p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art7.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Kowloon GR - Color Project</h3>
+                        <p>A twisting new manga by Mayazuki Jun (After The Rain), colored by me here.</p>
+                        <p style="color: crimson;">🔞Content warning</p>
+                        <p><a href="https://www.pixiv.net/en/artworks/122083672" target="_blank" rel="noopener noreferrer"> View full image on Pixiv >></a></p>
+                    </div>
+                </div>
+
+                
+                
+                <!-- Add more art pieces as needed -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // filepath: c:\0 Projects\Web(HTML)\Portfolio\gallery.html
+        function toggleEnlarge(card) {
+            const isEnlarged = card.getAttribute('data-enlarged') === 'true';
+            if (isEnlarged) {
+                card.classList.remove('enlarged');
+                card.setAttribute('data-enlarged', 'false');
+            } else {
+                card.classList.add('enlarged');
+                card.setAttribute('data-enlarged', 'true');
+            }
+        }
+    </script>
+
+<div class="background-credit">
+    <a href="https://www.pixiv.net/en/artworks/122575115" target="_blank" rel="noopener noreferrer">Background: Shinku</a>
+</div>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <div class="container">
+            <a href="https://ruchithjay.github.io/linktree.github.io/" target="_blank" class="linktree-button">Visit My Linktree</a>
+            <br>
+            <br>
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
