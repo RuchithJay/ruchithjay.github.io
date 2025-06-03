@@ -272,16 +272,25 @@ a {
     cursor: pointer;
 }
 
-.art-card.enlarged {
-    transform: scale(1.5); /* Enlarge the art card */
-    z-index: 10; /* Bring it to the front */
-    position: relative; /* Ensure it stays above other elements */
-}
+/* .art-card.enlarged {
+    transform: scale(1.5);
+    z-index: 10;
+    position: relative;
+} */
 
 .art-card img {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+.art-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.art-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+    z-index: 2;
 }
 
 .art-info {
