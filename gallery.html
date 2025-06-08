@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <button id="scrollToTopBtn" title="Back to top" style="background: lightblue; border: none; border-radius: 50%; width: 48px; 
+                                                         height: 48px; display: flex; align-items: center; justify-content: center;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M12 5L6 11M12 5l6 6" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
     <!-- Navigation Bar (same as index.html) -->
     <nav class="navbar">
         <div class="container">
@@ -156,5 +162,30 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+
+    <script>
+    // Show/hide scroll-to-top button
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            scrollBtn.classList.add('show');
+        } else {
+            scrollBtn.classList.remove('show');
+        }
+    });
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+    <!-- Responsive Education Section -->
+    <style>
+        @media (max-width: 768px) {
+            .responsive-education {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+    </style>
 </body>
 </html>
