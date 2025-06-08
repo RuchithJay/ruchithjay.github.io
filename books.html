@@ -27,6 +27,11 @@
             </ul>
         </div>
     </nav>
+
+    <button id="scrollToShortStoriesBtn" title="View Short Stories">
+      Short <br>
+      Stories
+    </button>
     
     <!-- Books Section -->
     <section class="books">
@@ -185,6 +190,32 @@
     scrollBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+     // Scroll to Short Stories section
+    document.getElementById('scrollToShortStoriesBtn').addEventListener('click', function() {
+        const section = document.getElementById('short-stories');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+     // Hide the button when the short stories section is in view
+    function handleShortStoriesBtnVisibility() {
+        const btn = document.getElementById('scrollToShortStoriesBtn');
+        const section = document.getElementById('short-stories');
+        if (!btn || !section) return;
+
+        const rect = section.getBoundingClientRect();
+        // If the top of the section is within 120px of the top of the viewport or above, hide the button
+        if (rect.top <= 120) {
+            btn.classList.add('hide');
+        } else {
+            btn.classList.remove('hide');
+        }
+    }
+    window.addEventListener('scroll', handleShortStoriesBtnVisibility);
+    window.addEventListener('resize', handleShortStoriesBtnVisibility);
+    document.addEventListener('DOMContentLoaded', handleShortStoriesBtnVisibility);
 </script>
 
     <!-- Responsive Education Section -->

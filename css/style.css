@@ -552,3 +552,36 @@ body.dark-mode #scrollToTopBtn {
     background: #181a1b;
     color: #ffd700;
 }
+
+/* Floating button for Short Stories */
+#scrollToShortStoriesBtn {
+    position: fixed;
+    bottom: 100px;
+    left: 32px;
+    z-index: 1000;
+    background: #3498db;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    opacity: 0.92;
+    transition: background 0.2s, color 0.2s, opacity 0.2s;
+}
+#scrollToShortStoriesBtn:hover {
+    background: #e74c3c;
+    color: #ecf0f1;
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    #scrollToShortStoriesBtn {
+        left: 10px;
+        bottom: 80px;
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+}
