@@ -585,3 +585,45 @@ body.dark-mode #scrollToTopBtn {
         padding: 6px 10px;
     }
 }
+
+/* Smaller Published Books Section */
+.published-books {
+    text-align: center;
+}
+
+.published-books .books-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.published-books .book-card {
+    max-width: 220px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.published-books .book-card:hover {
+    transform: scale(1.05);
+}
+
+.published-books .book-card img {
+    height: 280px;
+    object-fit: cover;
+}
+
+.published-books .book-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.published-books .btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    width: 100%;
+    justify-content: center;
+}
