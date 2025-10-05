@@ -40,6 +40,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="logo-container">
+                <img src="assets/title.svg" alt="RuchithJay Logo" class="loading-logo">
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJKQT82J"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -141,10 +155,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </svg>
                         </a>
                     </div>
-                </div>
+                </div> -->
 
             </div>
-        </div> -->
+        </div>
 
                  <!-- Education Section -->
          <div class="education" style="margin-top: 0%; margin-bottom: 5%;">
@@ -320,6 +334,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
     scrollBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Loading Screen Animation
+    window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        const progressBar = document.querySelector('.loading-progress');
+        
+        let progress = 0;
+        const duration = 2000; // 2 seconds
+        const interval = 50; // Update every 50ms
+        const increment = (100 / (duration / interval));
+        
+        const progressInterval = setInterval(() => {
+            progress += increment;
+            
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(progressInterval);
+                
+                // Hide loading screen after a short delay
+                setTimeout(() => {
+                    loadingScreen.classList.add('fade-out');
+                    
+                    // Remove from DOM after fade animation
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                    }, 800);
+                }, 300);
+            }
+            
+            progressBar.style.width = progress + '%';
+        }, interval);
     });
 </script>
 
