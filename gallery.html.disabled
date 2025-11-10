@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WJKQT82J');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuchithJay | Art Gallery</title>
+    <link rel="icon" href="assets/title.svg" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Q6N33FW84"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4Q6N33FW84');
+</script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="logo-container">
+                <img src="assets/title.svg" alt="RuchithJay Logo" class="loading-logo">
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJKQT82J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <button id="scrollToTopBtn" title="Back to top" style="background: lightblue; border: none; border-radius: 50%; width: 48px; 
+                                                         height: 48px; display: flex; align-items: center; justify-content: center;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M12 5L6 11M12 5l6 6" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    <!-- Navigation Bar (same as index.html) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">RuchithJay</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="gallery.html">Art Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h1>Manga/Comic Panel Coloring</h1>
+            <p class="gallery-description" style="background-color: hsl(192, 100%, 97%); padding: 10px; border-radius: 5px;">
+                This is one of my favourite lessuretime activities, which I find very enjoyable and relaxing to enguage in.
+                You can view some of my best works here. Done under the name 
+                <a href="https://x.com/ShinkuMajo" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 152, 170);">Shinku Majo.</a><br>
+                <b>Note:</b> I do not own the original art, all the credit goes to the original artists. I only do fan colorings.
+                <br>
+            </p>
+            <div class="gallery-grid">
+                <!-- Art Piece 1 -->
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art1.png" alt="Art Piece 1">
+                    <div class="art-info">
+                        <h3>Cuddly shopping</h3>
+                        <p>Part of the skip and loafer manga colour project done by me @ShinkuMajo 
+                            on pixiv and originally drawn by Misaki Takematsu</p>
+
+                    </div>
+                    
+                </div>
+                
+                <!-- Art Piece 2 -->
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art2.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Akane-banashi - Color Project</h3>
+                        <p>Colored the cover page of chapter 126, of the weekly jump manga
+                            Akane-banashi, originally drawn by Yuki Suenaga</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art3.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Emma - Color Project</h3>
+                        <p>Emma, a beautiful story by Kaoru Mori. If you're interested in drama with a Victorian setting, this is a must-read.</p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art8.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Witch Hat Atelier - Color Project</h3>
+                        <p>This is from the manga Witch Hat Atelier. (I have not yet uploaded it on pixiv)</p>
+                    </div>
+                    
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art6.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Kusuriya - Color Project (1)</h3>
+                        <p>Chapter 8: Garden Party - Part 3 (panel 16), fan color project.
+                            Originally drawn by @nekokurage, fan colored by me (Shinku) here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art5.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Kusuriya - Color Project (2)</h3>
+                        <p>Chapter 20: The Eunuch and the Courtesan (cover page), color panel.
+                            Originally drawn by @nekokurage, fan colored by me (Shinku) here.</p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art4.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Kusuriya - Color Project (2)</h3>
+                        <p>Apothecary Diaries fan color project, chapter 47 (Moon Fairy - Part 1) 
+                            cover page originally drawn by @nekokurage, fan colored by me (Shinku) here.</p>
+                    </div>
+                </div>
+
+                <div class="art-card" onclick="toggleEnlarge(this)" data-enlarged="false">
+                    <img src="images/art7.png" alt="Art Piece 2">
+                    <div class="art-info">
+                        <h3>Kowloon GR - Color Project</h3>
+                        <p>A twisting new manga by Mayazuki Jun (After The Rain), colored by me here.</p>
+                    </div>
+                </div>
+
+                
+                
+                <!-- Add more art pieces as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- <script>
+        // filepath: c:\0 Projects\Web(HTML)\Portfolio\gallery.html
+        function toggleEnlarge(card) {
+            const isEnlarged = card.getAttribute('data-enlarged') === 'true';
+            if (isEnlarged) {
+                card.classList.remove('enlarged');
+                card.setAttribute('data-enlarged', 'false');
+            } else {
+                card.classList.add('enlarged');
+                card.setAttribute('data-enlarged', 'true');
+            }
+        }
+    </script> -->
+
+<div class="background-credit">
+    <a href="https://x.com/ShinkuMajo" target="_blank" rel="noopener noreferrer">Background: Shinku</a>
+</div>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <div class="container">
+            <a href="https://ruchithjay.github.io/linktree.github.io/" target="_blank" class="linktree-button">Visit My Linktree</a>
+            <br>
+            <br>
+            <p>&copy; <span id="year"></span> RuchithJay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+    // Show/hide scroll-to-top button
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            scrollBtn.classList.add('show');
+        } else {
+            scrollBtn.classList.remove('show');
+        }
+    });
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Loading Screen Animation
+    window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        const progressBar = document.querySelector('.loading-progress');
+        
+        let progress = 0;
+        const duration = 2000; // 2 seconds
+        const interval = 50; // Update every 50ms
+        const increment = (100 / (duration / interval));
+        
+        const progressInterval = setInterval(() => {
+            progress += increment;
+            
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(progressInterval);
+                
+                // Hide loading screen after a short delay
+                setTimeout(() => {
+                    loadingScreen.classList.add('fade-out');
+                    
+                    // Remove from DOM after fade animation
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                    }, 800);
+                }, 300);
+            }
+            
+            progressBar.style.width = progress + '%';
+        }, interval);
+    });
+</script>
+
+    <!-- Responsive Education Section -->
+    <style>
+        @media (max-width: 768px) {
+            .responsive-education {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+</html>
