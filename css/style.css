@@ -448,10 +448,15 @@ a {
 }
 
 .logo-img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     object-fit: contain;
     border-radius: 8px;
+}
+
+.logo-img-small {
+    width: 80px;
+    height: 80px;
 }
 
 .job-details {
@@ -516,8 +521,13 @@ a {
     }
     
     .logo-img {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .logo-img-small {
+        width: 70px;
+        height: 70px;
     }
     
     .job-details h3 {
