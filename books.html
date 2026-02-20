@@ -44,21 +44,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJKQT82J"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <button id="scrollToTopBtn" title="Back to top" style="background: lightblue; border: none; border-radius: 50%; width: 48px; 
-                                                         height: 48px; display: flex; align-items: center; justify-content: center;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 19V5M12 5L6 11M12 5l6 6" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </button>
-    
-    <!-- Floating View More Button -->
-    <a href="https://ruchithjaybooks.netlify.app/" id="floatingViewMoreBtn" class="btn view-more-btn" target="_blank" rel="noopener noreferrer" 
-       title="Go to the main books page">
-
-        Go to Main Books Page
-
-    </a>
-    
     <!-- Navigation Bar (same as index.html) -->
     <nav class="navbar">
         <div class="container">
@@ -72,16 +57,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </nav>
 
-    <button id="scrollToShortStoriesBtn" title="View Short Stories">
-      Short <br>
-      Stories
-    </button>
     
     <!-- Books Section -->
     <section class="books">
         <div class="container">
-            <div class="section-header" style="margin-bottom: 20px;">
+            <div class="section-header" style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
                 <h1 style="margin: 0;">My Fiction Gallery</h1>
+                <a href="https://ruchithjaybooks.netlify.app/" class="btn" target="_blank" rel="noopener noreferrer" style="margin-top: 0;">Visit Main Books Site 🌐</a>
             </div>
             <p class="gallery-description" style="background-color: hsl(192, 100%, 97%); padding: 10px; border-radius: 5px;">
                 <b>Note:</b> You might have noted that the autors of the last two books are different. 
@@ -180,57 +162,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-        </section>
-
-    <!-- Short Stories Section -->
-    <section class="books" id="short-stories">
-        <div class="container">
-            <h1>Quick Reads / Short Stories</h1>
-            <p class="gallery-description" style="background-color: hsl(192, 100%, 97%); padding: 10px; border-radius: 5px;">
-                <b>Note:</b> Here are some of my short stories, ranging from fantasy to slice-of-life. Enjoy these quick reads!
-            </p>
-            <div class="books-grid">
-
-                <!-- Short Story 1 -->
-                <div class="book-card">
-                    <img src="images/placeholder.png" alt="">
-                    <div class="book-info">
-                        <h3>Coming soon...</h3>
-                        <p style="color: #474a4e;">⚪ N/A</p>
-                        <p class="meta">Genre: N/A</p>
-                        <p> </p>
-                        <a class="btn">Read Story</a>
-                    </div>
-                </div>
-
-                <!-- Short Story 2 -->
-                <div class="book-card">
-                    <img src="images/placeholder.png" alt="">
-                    <div class="book-info">
-                        <h3>Coming soon...</h3>
-                        <p style="color: #474a4e;">⚪ N/A</p>
-                        <p class="meta">Genre: N/A</p>
-                        <p> </p>
-                        <a class="btn">Read Story</a>
-                    </div>
-                </div>
-
-                <!-- Short Story 3 -->
-                <div class="book-card">
-                    <img src="images/placeholder.png" alt="">
-                    <div class="book-info">
-                        <h3>Coming soon...</h3>
-                        <p style="color: #474a4e;">⚪ N/A</p>
-                        <p class="meta">Genre: N/A</p>
-                        <p> </p>
-                        <a class="btn">Read Story</a>
-                    </div>
-                </div>
-                <!-- Add more short stories as needed -->
-            </div>
-        </div>
-    </section>
-
     <div class="background-credit">
         <a href="https://x.com/ShinkuMajo" target="_blank" rel="noopener noreferrer">Background: Shinku</a>
     </div>
@@ -248,79 +179,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-
-    <script>
-    // Show/hide scroll-to-top button
-    const scrollBtn = document.getElementById('scrollToTopBtn');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 200) {
-            scrollBtn.classList.add('show');
-        } else {
-            scrollBtn.classList.remove('show');
-        }
-    });
-    scrollBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-     // Scroll to Short Stories section
-    document.getElementById('scrollToShortStoriesBtn').addEventListener('click', function() {
-        const section = document.getElementById('short-stories');
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-
-     // Hide the button when the short stories section is in view
-    function handleShortStoriesBtnVisibility() {
-        const btn = document.getElementById('scrollToShortStoriesBtn');
-        const section = document.getElementById('short-stories');
-        if (!btn || !section) return;
-
-        const rect = section.getBoundingClientRect();
-        // If the top of the section is within 120px of the top of the viewport or above, hide the button
-        if (rect.top <= 120) {
-            btn.classList.add('hide');
-        } else {
-            btn.classList.remove('hide');
-        }
-    }
-    window.addEventListener('scroll', handleShortStoriesBtnVisibility);
-    window.addEventListener('resize', handleShortStoriesBtnVisibility);
-    document.addEventListener('DOMContentLoaded', handleShortStoriesBtnVisibility);
-
-    // Loading Screen Animation
-    window.addEventListener('load', function() {
-        const loadingScreen = document.getElementById('loadingScreen');
-        const progressBar = document.querySelector('.loading-progress');
-        
-        let progress = 0;
-        const duration = 2000; // 2 seconds
-        const interval = 50; // Update every 50ms
-        const increment = (100 / (duration / interval));
-        
-        const progressInterval = setInterval(() => {
-            progress += increment;
-            
-            if (progress >= 100) {
-                progress = 100;
-                clearInterval(progressInterval);
-                
-                // Hide loading screen after a short delay
-                setTimeout(() => {
-                    loadingScreen.classList.add('fade-out');
-                    
-                    // Remove from DOM after fade animation
-                    setTimeout(() => {
-                        loadingScreen.style.display = 'none';
-                    }, 800);
-                }, 300);
-            }
-            
-            progressBar.style.width = progress + '%';
-        }, interval);
-    });
-</script>
 
     <!-- Responsive Education Section -->
     <style>
